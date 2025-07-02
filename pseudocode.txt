@@ -1,0 +1,17 @@
+
+START
+INITIALISE MQTT Broker (Mosquitto)
+CONNECT Publisher to Broker
+CONNECT Subscriber to Broker
+
+LOOP every 5 seconds:
+    GENERATE random temperature value
+    GENERATE random humidity value
+    FORMAT values as JSON
+    PUBLISH data to MQTT topic
+    SUBSCRIBER receives message from topic
+    LOG received data
+    DISPLAY values in GUI
+END LOOP
+
+END
